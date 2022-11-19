@@ -1,0 +1,20 @@
+
+.main-nav__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav__button .main-nav__icon-menu {
+  display: none;
+}
+
+.main-nav__button.is-open .main-nav__icon-menu {
+  display: block;
+}
+
+.main-nav__button.is-open .main-nav__icon-close-menu {
+  display: none;
+}
