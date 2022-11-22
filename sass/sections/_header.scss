@@ -13,14 +13,14 @@
 }
 
 .main-nav__list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+  margin-left: 88px;
 
-  @media screen and (min-width: 480px){
-    display: none;
-  }
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
@@ -68,14 +68,14 @@
   display: flex;
   margin-left: auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: 96px;
+    margin-left: 80px;
   }
    @media screen and (min-width: 1200px) {
     display: flex;
@@ -84,10 +84,10 @@
 }
 
 .auth-nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
   }
 }
 

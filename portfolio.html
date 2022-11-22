@@ -35,8 +35,6 @@
                 </ul>
             </nav>
     
-            <!------------- КОНТАКТИ ------------------>
-    
             <ul class="auth-nav container__auth-nav list">
                 <li class="auth-nav__item">
                     <a href="mailto:info@devstudio.com" class="auth-nav__link">
@@ -55,6 +53,66 @@
                     </a>
                 </li>
             </ul>
+
+            <button type="button" class="main-nav__button" data-menu-open>
+                <svg class="main-nav__menu" width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use href="./img/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            
+            </div>
+            
+            <!-------------- МОБІЛЬНЕ МЕНЮ ---------------->
+            
+            <div class="mobile-menu is-hidden" data-menu>
+                <div class="container">
+                    <div class="mobile-menu__box">
+                        <button type="button" class="mobile-menu__button" data-menu-close>
+                            <svg class="mobile-menu__icon-close-menu" width="40" height="40" aria-label="Перемикач мобільного меню">
+                                <use href="./img/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+            
+                        <ul class="mobile-menu__list list">
+                            <li class="mobile-menu__item">
+                                <a href="./index.html" class="mobile-menu__link link">Студія</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a>
+                            </li>
+                            <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="mobile-menu-contacts__box">
+                        <ul class="mobile-menu-contacts__list list">
+                            <li class="mobile-menu-contacts__item">
+                                <a href="tel:+380961111111" class="mobile-menu__tel link">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu-contacts__item">
+                                <a href="mailto:info@devstudio.com" class="mobile-menu__mail link">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+            
+                        <ul class="mobile-menu-soc__list list">
+                            <li class="mobile-menu-soc__item">
+                                <a class="mobile-menu-soc__link link" href="">Instagram</a>
+                            </li>
+                            <li class="mobile-menu-soc__item">
+                                <a class="mobile-menu-soc__link link" href="">Twitter</a>
+                            </li>
+                            <li class="mobile-menu-soc__item">
+                                <a class="mobile-menu-soc__link link" href="">Facebook</a>
+                            </li>
+                            <li class="mobile-menu-soc__item">
+                                <a class="mobile-menu-soc__link link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </div>
     </header>
 
@@ -76,7 +134,12 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/technocrat.jpg" alt="Веб-сайт" width="370"          height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/technocrat.jpg 1x, ./img/portfolio/technocrat-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/technocrat-tab.jpg 1x, ./img/portfolio/technocrat-2x-tab.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/technocrat-mob.jpg 1x, ./img/portfolio/technocrat-2x-mob.jpg 2x" media="(min-width: 320px)">
+                                <img src="./img/portfolio/technocrat-mob.jpg" alt="Веб-сайт" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -93,7 +156,14 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/new-orlean.jpg" alt="Дизайн" width="370"  height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/new-orlean.jpg 1x, ./img/portfolio/new-orlean-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/new-orlean-tab.jpg 1x, ./img/portfolio/new-orlean-2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/new-orlean-mob.jpg 1x, ./img/portfolio/new-orlean-2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                    <img src="./img/portfolio/new-orlean-mob.jpg" alt="Дизайн" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -112,7 +182,14 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/seafood.jpg" alt="Додаток" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/seafood.jpg 1x, ./img/portfolio/seafood-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/seafood-tab.jpg 1x, ./img/portfolio/seafood-2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/seafood-mob.jpg 1x, ./img/portfolio/seafood-2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                    <img src="./img/portfolio/seafood-mob.jpg" alt="Додаток" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -131,7 +208,12 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/prime.jpg" alt="Маркетинг" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/prime.jpg 1x, ./img/portfolio/prime-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/prime-tab.jpg 1x, ./img/portfolio/prime-2x-tab.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/prime-mob.jpg 1x, ./img/portfolio/prime-2x-mob.jpg 2x" media="(min-width: 320px)">
+                                <img src="./img/portfolio/prime-mob.jpg" alt="Маркетинг" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -150,7 +232,12 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/boxes.jpg" alt="Додаток" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/boxes.jpg 1x, ./img/portfolio/boxes-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/boxes-tab.jpg 1x, ./img/portfolio/boxes-2x-tab.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/boxes-mob.jpg 1x, ./img/portfolio/boxes-2x-mob.jpg 2x" media="(min-width: 320px)">
+                                <img src="./img/portfolio/boxes-mob.jpg" alt="Додаток" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -169,7 +256,12 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/inspiration-has-no-border.jpg" alt="Веб-сайт" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/inspiration-has-no-border.jpg 1x, ./img/portfolio/inspiration-has-no-border-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/inspiration-has-no-border-tab.jpg 1x, ./img/portfolio/inspiration-has-no-border-2x-tab.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/inspiration-has-no-border-mob.jpg 1x, ./img/portfolio/inspiration-has-no-border-2x-mob.jpg 2x" media="(min-width: 320px)">
+                                <img src="./img/portfolio/inspiration-has-no-border-mob.jpg" alt="Веб-сайт" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -186,7 +278,17 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/limited-edition.jpg" alt="Дизайн" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/limited-edition.jpg 1x, ./img/portfolio/limited-edition-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./img/portfolio/limited-edition-tab.jpg 1x, ./img/portfolio/limited-edition-2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./img/portfolio/limited-edition-mob.jpg 1x, ./img/portfolio/limited-edition-2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                    <img src="./img/portfolio/limited-edition-mob.jpg" alt="Дизайн" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -205,7 +307,15 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/lab.jpg" alt="Маркетинг" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/lab.jpg 1x, ./img/portfolio/lab-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/lab-tab.jpg 1x, ./img/portfolio/lab-2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/lab-mob.jpg 1x, ./img/portfolio/lab-2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                    <img src="./img/portfolio/lab-mob.jpg" alt="Маркетинг" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -224,7 +334,12 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__work">
-                            <img src="./img/growing-business.jpg" alt="Додаток" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/portfolio/growing-business.jpg 1x, ./img/portfolio/growing-business-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/growing-business-tab.jpg 1x, ./img/portfolio/growing-business-2x-tab.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/growing-business-mob.jpg 1x, ./img/portfolio/growing-business-2x-mob.jpg 2x" media="(min-width: 320px)">
+                                <img src="./img/portfolio/growing-business-mob.jpg" alt="Додаток" width="450" height="294">
+                            </picture>
                             <div class="project-list__overlay">
                                 <div class="project-list__text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -311,6 +426,6 @@
                 </form>
             </div>
         </footer>
-    
+    <script src="./js/menu.js"></script>
     </body>
 </html>

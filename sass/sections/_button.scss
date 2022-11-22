@@ -16,11 +16,12 @@
     }
 }
 
-.button-list__item:nth-child(n + 3) {
+.button-list__item:nth-child(n + 4) {
     margin-bottom: 0px;
 }
 
-.button-list__item:not(:first-child) {
+.button-list__item:not(:first-child),
+.button-list__item:not(:last-child) {
     margin-left: 8px;
 }
 
