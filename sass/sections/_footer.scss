@@ -6,10 +6,9 @@
   padding-right: 15px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    align-items: center;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: center;
   }
 
@@ -25,7 +24,7 @@
   text-align: center;
 
   @media screen and (min-width: 768px){
-    margin-left: 76px;
+    margin-left: 61px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 0;
@@ -41,11 +40,15 @@
 }
 
 .adress {
-  margin-top: 20px;
+  margin-top: 28px;
   margin-bottom: 60px;
   font-style: normal;
   font-size: var(--primary-font-size);
   line-height: 1.71;
+
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
 }
 
 .adress__list {
@@ -83,6 +86,7 @@
 
   @media screen and (min-width: 768px) {
     margin-left: 165px;
+    margin-right: 89px;
   }
 
   @media screen and (min-width: 1200px){
@@ -93,11 +97,11 @@
 
 .footer-connection__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-white-color);
